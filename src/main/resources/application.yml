@@ -1,0 +1,18 @@
+server:
+  port: 3000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restdata
+    username: postgres
+    password: root
+  data:
+    rest:
+      base-path: rest-data
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
